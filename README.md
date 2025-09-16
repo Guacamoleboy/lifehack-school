@@ -1,2 +1,2 @@
 # lifehack-school
-School Project Git Repo
+## By Ebou, Andreas & Jonas.
