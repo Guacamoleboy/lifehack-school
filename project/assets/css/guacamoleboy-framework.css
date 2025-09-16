@@ -168,65 +168,65 @@ li {
 			   /* Text Formatting */
 /* ______________________________________________ */
 
-strong {
-    font-weight: bold;
+.strong {
+    font-weight: bold !important;
 }
 
-b {
-    font-weight: bold;
+.b {
+    font-weight: bold !important;
 }
 
-em {
-    font-style: italic;
+.em {
+    font-style: italic !important;
 }
 
-i {
-    font-style: italic;
+.i {
+    font-style: italic !important;
 }
 
-small {
-    font-size: 0.875rem;
+.small {
+    font-size: 0.875rem !important;
 }
 
-mark {
-    background-color: #fffb91;
+.mark {
+    background-color: #fffb91 !important;
 }
 
-del {
-    text-decoration: line-through;
+.del {
+    text-decoration: line-through !important;
 }
 
-ins {
-    text-decoration: underline;
+.ins {
+    text-decoration: underline !important;
 }
 
-sub {
-    vertical-align: sub;
+.sub {
+    vertical-align: sub !important;
     font-size: 0.75rem;
 }
 
-sup {
-    vertical-align: super;
+.sup {
+    vertical-align: super !important;
     font-size: 0.75rem;
 }
 
-code {
-    font-family: monospace;
-    background-color: #f8f9fa;
+.code {
+    font-family: monospace !important;
+    background-color: #f8f9fa !important;
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
 }
 
-blockquote {
+.blockquote {
     margin: 0 0 1rem 0;
     padding-left: 1rem;
-    border-left: 0.25rem solid #dee2e6;
-    color: #6c757d;
+    border-left: 0.25rem solid #dee2e6 !important;
+    color: #6c757d !important;
 }
 
-hr {
+.hr {
     border: none;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6 !important;
     margin: 2rem 0;
 }
 
