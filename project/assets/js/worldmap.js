@@ -11,7 +11,7 @@ const map = L.map('map', {
 });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+    attribution: 'BeyondBorders | Build: 0.0.1',
     subdomains: 'abcd',
     maxZoom: 10 // Same as first maxZoom
 }).addTo(map);
