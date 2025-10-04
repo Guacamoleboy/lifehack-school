@@ -1,0 +1,27 @@
+CREATE TABLE roles (
+id SERIAL PRIMARY KEY,
+role_name VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE users (
+id SERIAL PRIMARY KEY,
+email VARCHAR(255) UNIQUE NOT NULL,
+username VARCHAR(100) UNIQUE NOT NULL,
+password_hash TEXT NOT NULL,
+role_id INT NOT NULL REFERENCES roles(id) ON DELETE RESTRICT,
+created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE pin_categories (
+id SERIAL PRIMARY KEY,
+category_name VARCHAR(50) UNIQUE NOT NULL /* Normale pins eller bookmarked */
+);
+
+CREATE TABLE pins (
+id SERIAL PRIMARY KEY,
+user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+category_id INT NOT NULL REFERENCES pin_categories(id) ON DELETE RESTRICT,
+latitude DECIMAL(9,6) NOT NULL,
+longitude DECIMAL(9,6) NOT NULL,
+created_at TIMESTAMP DEFAULT NOW()
+);
